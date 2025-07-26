@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: locations
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/locationsdb
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop  # Options: none | validate | update | create | create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.spatial.dialect.postgis.PostgisPG95Dialect
+        format_sql: true
+        spatial:
+          dialect: org.hibernate.spatial.dialect.postgis.PostgisDialect
+          geometry_factory: org.hibernate.spatial.jts.mgeom.MGeometryFactory
+    defer-datasource-initialization: true
+    show-sql: true
+
+  sql:
+    init:
+      mode: always
+
