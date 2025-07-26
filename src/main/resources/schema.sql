@@ -10,3 +10,7 @@ CREATE TABLE locations (
     opening_hours VARCHAR(255),
     type VARCHAR(50)
 );
+
+CREATE INDEX idx_locations_coordinates
+    ON locations
+    USING GIST (coordinates);

@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Crimson Spoon 1",
+    "type": "Restaurant",
+    "opening-hours": "08:00AM-10:00PM",
+    "image": "https://tinyurl.com/location1",
+    "coordinates": "x=57,y=48",
+    "radius": 4
+  },
+  {
+    "name": "Casa Verde 2",
+    "type": "Restaurant",
+    "opening-hours": "09:00AM-11:00PM",
+    "image": "https://tinyurl.com/location2",
+    "coordinates": "x=44,y=59",
+    "radius": 2
+  },
+  {
+    "name": "Sunset Kitchen 3",
+    "type": "Restaurant",
+    "opening-hours": "10:00AM-11:00PM",
+    "image": "https://tinyurl.com/location3",
+    "coordinates": "x=53,y=52",
+    "radius": 5
+  },
+  {
+    "name": "Saffron Lane 4",
+    "type": "Restaurant",
+    "opening-hours": "11:00AM-11:30PM",
+    "image": "https://tinyurl.com/location4",
+    "coordinates": "x=46,y=49",
+    "radius": 1
+  },
+  {
+    "name": "The Rustic Table 5",
+    "type": "Restaurant",
+    "opening-hours": "09:00AM-11:00PM",
+    "image": "https://tinyurl.com/location5",
+    "coordinates": "x=55,y=45",
+    "radius": 3
+  },
+  {
+    "name": "Harvest Moon Cafe 6",
+    "type": "Restaurant",
+    "opening-hours": "10:00AM-11:00PM",
+    "image": "https://tinyurl.com/location6",
+    "coordinates": "x=49,y=51",
+    "radius": 2
+  },
+  {
+    "name": "Royal Orchid 7",
+    "type": "Restaurant",
+    "opening-hours": "11:00AM-11:30PM",
+    "image": "https://tinyurl.com/location7",
+    "coordinates": "x=60,y=47",
+    "radius": 5
+  },
+  {
+    "name": "Pearl Street Eats 8",
+    "type": "Restaurant",
+    "opening-hours": "08:00AM-10:00PM",
+    "image": "https://tinyurl.com/location8",
+    "coordinates": "x=52,y=55",
+    "radius": 3
+  },
+  {
+    "name": "Golden Wok 9",
+    "type": "Restaurant",
+    "opening-hours": "09:00AM-11:00PM",
+    "image": "https://tinyurl.com/location9",
+    "coordinates": "x=45,y=54",
+    "radius": 1
+  },
+  {
+    "name": "Bluefin Bistro 10",
+    "type": "Restaurant",
+    "opening-hours": "10:00AM-11:00PM",
+    "image": "https://tinyurl.com/location10",
+    "coordinates": "x=50,y=50",
+    "radius": 4
+  }
+]

@@ -11,9 +11,11 @@ import java.util.UUID;
 import org.geolatte.geom.C2D;
 import org.geolatte.geom.Point;
 import org.geolatte.geom.crs.CoordinateReferenceSystems;
+import org.mapstruct.Mapper;
 import org.mapstruct.Named;
 import static org.geolatte.geom.builder.DSL.point;
 
+@Mapper(componentModel = "spring")
 public interface LocationMapper {
 
     // --- Entity to DTO mapping ---
@@ -70,11 +72,6 @@ public interface LocationMapper {
         location.setCoordinates(point);
 
         return location;
-    }
-    default List<Location> dtosToLocations(List<CreateLocationDTO> dtos) {
-        return dtos.stream()
-                .map(this::toLocationEntity)
-                .toList();
     }
 
 }

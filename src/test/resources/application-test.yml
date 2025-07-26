@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testdb
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop   # or update (for keeping schema)
+    properties:
+      hibernate:
+        dialect: org.hibernate.spatial.dialect.postgis.PostgisPG95Dialect
+        format_sql: true
+        spatial:
+          dialect: org.hibernate.spatial.dialect.postgis.PostgisDialect
+          geometry_factory: org.hibernate.spatial.jts.mgeom.MGeometryFactory
+    defer-datasource-initialization: true
+
+
+  sql:
+    init:
+      mode: always  # runs data.sql if present
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql: TRACE
