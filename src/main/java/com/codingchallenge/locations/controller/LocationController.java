@@ -57,10 +57,10 @@ public class LocationController {
         }
     }
 
-    @PostMapping("/bulk")
-    public ResponseEntity<String> uploadLocations(@RequestBody List<CreateLocationDTO> locations) {
-        locationService.createLocations(locations);
-        return ResponseEntity.ok(" locations imported successfully");
+    @PostMapping("/create/bulk")
+    public ResponseEntity<List<LocationDTO>> createLocations(
+            @RequestBody List<CreateLocationDTO> locations) {
+        return new ResponseEntity<>(locationService.createLocations(locations), HttpStatus.OK);
     }
 
 

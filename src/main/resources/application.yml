@@ -19,7 +19,6 @@ spring:
           dialect: org.hibernate.spatial.dialect.postgis.PostgisDialect
           geometry_factory: org.hibernate.spatial.jts.mgeom.MGeometryFactory
     defer-datasource-initialization: true
-    show-sql: true
 
   sql:
     init:
